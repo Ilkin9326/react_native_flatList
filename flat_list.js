@@ -31,7 +31,11 @@ export default class App extends React.Component {
   }
 
   componentDidMount(){
+<<<<<<< HEAD
     const url = ''
+=======
+    const url = 'ozunuzun json fileniz'
+>>>>>>> b0b493225b023c4111a39d2441cf4efb9f83ba83
     
     fetch(url)
     .then((response) => response.json())
