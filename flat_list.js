@@ -31,7 +31,7 @@ export default class App extends React.Component {
   }
 
   componentDidMount(){
-    const url = 'https://www.fastsolution.az/fazyi/citylist.json'
+    const url = ''
     
     fetch(url)
     .then((response) => response.json())
