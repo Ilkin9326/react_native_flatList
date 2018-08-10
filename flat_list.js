@@ -54,6 +54,10 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+	    <View style={styles.txtCity}>
+           <Text style={{color:"#2366b5", fontWeight: "bold"}}>Şəhərlər</Text>
+        </View>
+
         <FlatList
           data={this.state.dataSource}
           renderItem={this.renderItem}
@@ -70,6 +74,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingTop: Constants.statusBarHeight,
     backgroundColor: '#ecf0f1',
-  }
+  },
+  txtCity: {
+    width: 100 + "%",
+    height: 56,
+    backgroundColor: "rgb(250,250,250)",
+    borderBottomColor: "rgb(233,233,233)",
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    justifyContent: "center",
+    alignItems: "center"
+  },
   
 });
